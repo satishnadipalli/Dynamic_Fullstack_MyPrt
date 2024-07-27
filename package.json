@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install:force": "npm install --force"
+    "install:force": "npm install --force",
+    "install:legacy": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.41.3",
