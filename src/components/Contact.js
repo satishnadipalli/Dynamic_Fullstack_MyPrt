@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext, useRef } from "react";
 import UserContext from "../userContext/userContext";
 import Preloader from "../components/preloader";
-import Confetti from 'react-confetti';
+// import Confetti from 'react-confetti';
 
 const Contact = () => {
   const [feedBack, setFeedBack] = useState({
@@ -206,7 +206,7 @@ const Contact = () => {
           <img src="img/brushes/contact/1.png" alt="image" />
         </div>
       </div>
-      {iisLoading && <Confetti />}
+      {/* {iisLoading && <Confetti />} */}
     </div>
   );
 };
