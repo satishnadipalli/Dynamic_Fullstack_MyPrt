@@ -1,6 +1,7 @@
 {
   "name": "SatishNadipalli",
   "version": "0.1.0",
+  "main": "./pages/index.js",
   "private": false,
   "scripts": {
     "dev": "next dev",
