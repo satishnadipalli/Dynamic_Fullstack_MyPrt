@@ -1,12 +1,13 @@
 {
-  "name": "dizme",
+  "name": "SatishNadipalli",
   "version": "0.1.0",
   "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "install:force": "npm install --force"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.41.3",

@@ -2,6 +2,42 @@ import parse from "html-react-parser";
 import { useEffect, useState, useContext } from "react";
 import UserContext from "../userContext/userContext";
 import PreLoader from "../components/preloader";
+import { Message } from "../../HeroIcons";
+import Link from "next/link";
+import Image from "next/image";
+
+const social_handles = [
+  {
+    platform:"GitHub",
+    imageUrl:"https://th.bing.com/th?id=OSK.06262f10189ebe54f3424af6f30d7d41&w=80&h=80&o=6&cb=B&pid=1.2",
+    link:"https://github.com/satishnadipalli",
+    id:1
+  },
+  {
+    platform:"Twitter",
+    imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp",
+    link:"",
+    id:1
+  },
+  {
+    platform:"Instagram",
+    imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp",
+    link:"https://www.instagram.com/_bitcode__/?hl=en",
+    id:2
+  },
+  {
+    platform:"Linkedin",
+    imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp",
+    link:"https://www.linkedin.com/in/satish-nadipalli/",
+    id:3
+  },
+  {
+    platform:"facebook",
+    imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
+    link:"",
+    id:4
+  }
+];
 
 const Home = ({ dark }) => {
   const data = useContext(UserContext);
@@ -39,27 +75,41 @@ const Home = ({ dark }) => {
           <div className="content">
             <div className="details">
               <div className="hello">
-                <h3 className="orangeText">{`Hello, I'm`}</h3>
+                <h3 style={{fontSize:"18px"}} className="font-mono text-emerald-400">{`Hello, I'm`}</h3>
               </div>
-              <div className="name">
+              <div className=" text-4xl ">
                 <h3>Satish Nadipalli</h3>
               </div>
               <div className="job">
-                <p>
-                  A <span className="greenText">Software Developer</span>{" "}
-                  From <span className="purpleText">Visakhapatnam, Andhra</span>
-                </p>
+
               </div>
-              <div className="text">
+              <div className="text text-black font-mono">
                 <p>
-                  As a seasoned full-stack developer with 2 years of experience, I have honed my skills in JavaScript, TypeScript. My technical proficiency spans a broad range of technologies, including React.js, Next.js, Node.js, and Express for web development, as well as React Native for mobile app development. I am also well-versed in cloud technologies, particularly AWS, which I use to deploy and manage scalable applications.
+                An individual who is passionate about technological innovation and software development. My journey in the tech world is driven by a keen interest in coding, algorithm design, and staying up-to-date in the latest technological trends.
                 </p>
+                <p>My passion for technology goes beyond personal achievement, it's about leveraging it to solve real-world problems.</p>
               </div>
-              <div className="button">
+              <div className="items-center md:flex grid place-items-center ">
                 <div className="dizme_tm_button">
                   <a className="anchor" href="#about">
-                    <span>About Me</span>
+                    <span>Contact</span>
                   </a>
+                </div>
+                <div className="flex gap-2 ml-3 md:mt-0 mt-8">
+                  {
+                    social_handles.map((item)=>{
+                      return(
+                        <div className="w-8 h-8 flex items-center justify-center">
+                          <Link href={item.link}>
+                            <img
+                              src={item.imageUrl}
+                              className="w-7 h-7 border-solid border-4 hover:border-emerald-600 rounded-2xl"
+                            />
+                          </Link>
+                        </div>
+                      )
+                    })
+                  }
                 </div>
               </div>
             </div>
@@ -74,8 +124,8 @@ const Home = ({ dark }) => {
             </div>
           </div>
         </div>
-        <div className="dizme_tm_down">
-          <a className="anchor bg-red-500" href="#process">
+        <div className="dizme_tm_down hidden md:flex">
+          <a className="anchor " href="#process">
             <svg
               width="26px"
               height="100%"
