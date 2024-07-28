@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { fatchData } from "../utilits";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import Image from "next/image";
+
 const processData = [
   {
       "title": "Pixel Perfect",
@@ -50,7 +52,9 @@ const Process = ({ dark }) => {
                     <div className="list_inner">
                       <div className="icon">
                         <span>
-                          <img
+                          <Image
+                          layout="fill"
+                          objectFit="cover" 
                             className="brush"
                             src={`img/brushes/process${dark ? "/dark" : ""}/${
                               i + 1

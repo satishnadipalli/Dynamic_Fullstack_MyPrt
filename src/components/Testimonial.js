@@ -8,6 +8,8 @@ import SwiperCore, {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { fatchData } from "../utilits";
 import UserContext from "../userContext/userContext";
+import Image from "next/image";
+
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
 
 const data = {
@@ -133,7 +135,8 @@ const Testimonial = () => {
                       </div>
                       <div className="short">
                         <div className="image">
-                          <img style={{borderRadius: "100%"}} alt="image" src={data.image.url} />
+                          <Image layout="fill"
+      objectFit="cover"  style={{borderRadius: "100%"}} alt="image" src={data.image.url} />
                           <div className="main" data-img-url={data.image.url} />
                         </div>
                         <div className="detail">
@@ -185,7 +188,8 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="brush_1 wow fadeInRight" data-wow-duration="1s">
-          <img src="img/brushes/testimonials/1.png" alt="image" />
+          <Image layout="fill"
+      objectFit="cover"  src="img/brushes/testimonials/1.png" alt="image" />
         </div>
       </div>
     </div>

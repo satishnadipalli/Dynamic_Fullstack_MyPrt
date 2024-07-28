@@ -9,7 +9,7 @@ const YoutubeClone = "/img/logo/YoutubeClone.png";
 const chattingApp = "/img/logo/chattingApp.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css"
-
+import Image from "next/image";
 
 const data1 = {
   projects: [
@@ -239,7 +239,9 @@ const Portfolio = () => {
                           data-category={item?.techStack}
                           style={{minHeight:"210px"}}
                         >
-                          <img
+                          <Image
+                          layout="fill"
+                          objectFit="cover" 
                             className="min-h-[220px] max-h-[220px]"
                             src={item?.image?.url}
                             alt={item?.title}
@@ -265,7 +267,9 @@ const Portfolio = () => {
           className="brush_1 wow zoomIn"
           data-wow-duration="1s"
         >
-          <img
+          <Image
+          layout="fill"
+          objectFit="cover" 
             src="img/brushes/portfolio/1.png"
             alt="image"
           />
@@ -274,7 +278,9 @@ const Portfolio = () => {
           className="brush_2 wow fadeInRight"
           data-wow-duration="1s"
         >
-          <img
+          <Image
+          layout="fill"
+          objectFit="cover" 
             src="img/brushes/portfolio/2.png"
             alt="image"
           />

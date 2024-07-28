@@ -2,6 +2,8 @@ import React, { useEffect, useState, useContext, useRef } from "react";
 import UserContext from "../userContext/userContext";
 import Preloader from "../components/preloader";
 // import Confetti from 'react-confetti';
+import Image from "next/image";
+
 
 const Contact = () => {
   const [feedBack, setFeedBack] = useState({
@@ -183,7 +185,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="brush_2 wow fadeInRight" data-wow-duration="1s">
-              <img src="img/brushes/contact/2.png" alt="image" />
+              <Image layout="fill"
+      objectFit="cover"  src="img/brushes/contact/2.png" alt="image" />
             </div>
           </div>
           <div className="dizme_tm_map wow fadeInUp" data-wow-duration="1s">
@@ -203,7 +206,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <img src="img/brushes/contact/1.png" alt="image" />
+          <Image layout="fill"
+      objectFit="cover"  src="img/brushes/contact/1.png" alt="image" />
         </div>
       </div>
       {/* {iisLoading && <Confetti />} */}

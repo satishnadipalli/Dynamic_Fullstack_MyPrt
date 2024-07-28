@@ -12,7 +12,8 @@ import "aos/dist/aos.css";
 
 
 const sortedExperience = [
-  {
+  { 
+    id:1,
     company_name: "MKHXTS IT Consultancy Services",
     totalExp:6,
     summary: "A Marketing Agency founded in 2003 which worked as a Fullstack developer, Develop",
@@ -33,6 +34,7 @@ const sortedExperience = [
     }
   },
   {
+    id:2,
     company_name: "Rablo Company",
     image:rablo,
     totalExp:4,
@@ -52,6 +54,7 @@ const sortedExperience = [
     }
   },
   {
+    id:4,
     company_name: "MHTECHIN Pvt-Ltd",
     summary: "Worked in a team of full-stack developers to create an edustreaming application, focusing on advanced features and seamless user experience.",
     summary2:"Worked in a team of full-stack developers to create an edustreaming application, focusing on advanced features and seamless user experience.",
@@ -144,7 +147,7 @@ const News = ({dark}) => {
               {
                 sortedExperience.map((exp)=>{
                   return(
-                    <div className="flex h-full " data-aos="fade">
+                    <div key={exp.id} className="flex h-full " data-aos="fade">
                       <div className="grid h-full">
                         <div className="h-full w-16  flex justify-center flex-col items-center ">
                           <div className="w-10 h-10 p-0.5 rounded-3xl  border-2 border-solid border-gray-600">
@@ -169,7 +172,7 @@ const News = ({dark}) => {
                           {
                             exp?.stack?.map((tech,i)=>{
                               return(
-                                <div  data-aos="zoom-in" data-aos-duration="200" data-aos-delay={`${i+3}00`}  className={`  text-sm py-1 px-3 rounded-lg whitespace-nowrap ${dark ? "text-emerald-400 bg-emerald-900/80" : "text-green-800 bg-lime-100"}`}>{tech}</div>
+                                <div key={tech} data-aos="zoom-in" data-aos-duration="200" data-aos-delay={`${i+3}00`}  className={`  text-sm py-1 px-3 rounded-lg whitespace-nowrap ${dark ? "text-emerald-400 bg-emerald-900/80" : "text-green-800 bg-lime-100"}`}>{tech}</div>
                               )
                             })
                           }
@@ -183,10 +186,10 @@ const News = ({dark}) => {
           </div>
         </div>
         <div className="brush_1 wow zoomIn mt-32" data-wow-duration="1s">
-          <img src="img/brushes/news/1.png" alt="image" />
+          <Image layout="fill" src="img/brushes/news/1.png" alt="image" />
         </div>
         <div className="brush_2 wow zoomIn" data-wow-duration="1s">
-          <img src="img/brushes/news/2.png" alt="image" />
+          <Image       objectFit="cover"  src="img/brushes/news/2.png" alt="image" />
         </div>
       </div>
     </div>

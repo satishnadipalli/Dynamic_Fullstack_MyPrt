@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import UserContext from "../userContext/userContext";
-
+import Image from "next/image";
 const Partners = ({ dark }) => {
   const data = useContext(UserContext);
   const headingStyle = {
@@ -46,6 +46,7 @@ const Partners = ({ dark }) => {
                 social_handles.map((item,i) =>{
                   return (
                     <li
+                    
                     className="wow fadeIn"
                     data-wow-duration="1s"
                     key={i}
@@ -53,7 +54,7 @@ const Partners = ({ dark }) => {
                     style={{height:"100%",display:"flex",alignItems:"center",justifyContent:"center",padding:"35px"}}
                   >
                     <div  >
-                      <img
+                      <Image
                         src={item.imageUrl}
                         alt="image not fuond"
                       />
@@ -66,7 +67,7 @@ const Partners = ({ dark }) => {
           </div>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <img src="img/brushes/partners/1.png" alt="image" />
+          <Image src="img/brushes/partners/1.png" alt="image" />
         </div>
       </div>
     </div>

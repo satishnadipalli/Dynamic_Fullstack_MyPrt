@@ -17,25 +17,25 @@ const social_handles = [
     platform:"Twitter",
     imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp",
     link:"",
-    id:1
+    id:2
   },
   {
     platform:"Instagram",
     imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp",
     link:"https://www.instagram.com/_bitcode__/?hl=en",
-    id:2
+    id:3
   },
   {
     platform:"Linkedin",
     imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp",
     link:"https://www.linkedin.com/in/satish-nadipalli/",
-    id:3
+    id:4
   },
   {
     platform:"facebook",
     imageUrl:"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
     link:"",
-    id:4
+    id:5
   }
 ];
 
@@ -99,9 +99,11 @@ const Home = ({ dark }) => {
                   {
                     social_handles.map((item)=>{
                       return(
-                        <div className="w-8 h-8 flex items-center justify-center">
+                        <div key={item.id} className="w-8 h-8 flex items-center justify-center">
                           <Link href={item.link}>
-                            <img
+                            <Image
+                            layout="fill"
+                            objectFit="cover" 
                               src={item.imageUrl}
                               className="w-7 h-7 border-solid border-4 hover:border-emerald-600 rounded-2xl"
                             />
@@ -115,7 +117,9 @@ const Home = ({ dark }) => {
             </div>
             <div className="image-container">
               <div className="mask-image">
-                <img
+                <Image
+                layout="fill"
+                objectFit="cover" 
                   className="masked-image"
                   // src={"/img/logo/satishNadipalli.jpg"}
                   alt="image"

@@ -3,6 +3,8 @@ import { useEffect, useState, useContext } from "react";
 import { fatchData } from "../utilits";
 import ServicePopup from "./popup/ServicePopup";
 import UserContext from "../userContext/userContext";
+import Image from "next/image"
+
 
 const data  = {
   "services": [
@@ -137,13 +139,17 @@ const Service = ({ dark }) => {
                         <div className="list_inner tilt-effect">
                           <span className="icon">
                             {dark ? (
-                              <img
+                              <Image
+                              layout="fill"
+      objectFit="cover" 
                                 className="back"
                                 src={data.image.url}
                                 alt="image"
                               />
                             ) : (
-                              <img
+                              <Image
+                              layout="fill"
+      objectFit="cover" 
                                 className="back"
                                 src={data.image.url}
                                 alt="image"
@@ -160,7 +166,9 @@ const Service = ({ dark }) => {
                             <p>{data.desc}</p>
                           </div>
                           <a className="dizme_tm_full_link" href="#" />
-                          <img
+                          <Image
+                          layout="fill"
+                          objectFit="cover" 
                             className="popup_service_image"
                             src={data.image.url}
                             alt="image"
@@ -173,10 +181,12 @@ const Service = ({ dark }) => {
           </div>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <img src="img/brushes/service/5.png" alt="image" />
+          <Image layout="fill"
+      objectFit="cover"  src="img/brushes/service/5.png" alt="image" />
         </div>
         <div className="brush_2 wow zoomIn" data-wow-duration="1s">
-          <img src="img/brushes/service/6.png" alt="image" />
+          <Image layout="fill"
+      objectFit="cover"   src="img/brushes/service/6.png" alt="image" />
         </div>
       </div>
     </div>

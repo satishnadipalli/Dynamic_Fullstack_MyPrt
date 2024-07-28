@@ -1,4 +1,7 @@
+import Image from "next/image";
 const DetailsPopup = ({ open, close, data }) => {
+
+
 
   const opacityLinks ={
     opacity: ".2"
@@ -20,7 +23,8 @@ const DetailsPopup = ({ open, close, data }) => {
         <div className="description_wrap">
           <div className="popup_details">
             <div className="top_image">
-              <img src={data?.image?.url} alt="image" />
+              <Image layout="fill"
+      objectFit="cover"  src={data?.image?.url} alt="image" />
               <div
                 className="main"
                 data-img-url={data?.image?.url}
@@ -34,7 +38,7 @@ const DetailsPopup = ({ open, close, data }) => {
                   <>
                     {" "}
                     <a href={data?.liveurl} title="Live Preview">
-                      <img
+                      <Image
                         alt="live preview"
                         width={24}
                         height={15}
@@ -47,7 +51,9 @@ const DetailsPopup = ({ open, close, data }) => {
                   <>
                     {" "}
                     <a href={data?.liveurl} title="Live Preview (Unavailable)">
-                      <img style={opacityLinks}
+                      <Image
+                      layout="fill"
+                      objectFit="cover"  style={opacityLinks}
                         alt="live preview"
                         width={24}
                         height={15}
@@ -62,7 +68,8 @@ const DetailsPopup = ({ open, close, data }) => {
                   <>
                     {" "}
                     <a href={data?.liveurl} title="GitHub Repo">
-                      <img
+                      <Image
+                      layout="fill"
                         alt="github"
                         width={20}
                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -73,7 +80,8 @@ const DetailsPopup = ({ open, close, data }) => {
                   <>
                     {" "}
                     <a style={opacityLinks} href={data?.liveurl} title="GitHub Repo (Unavailable)">
-                      <img
+                      <Image
+                            objectFit="cover" 
                         alt="github"
                         width={20}
                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
