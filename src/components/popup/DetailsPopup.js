@@ -1,8 +1,6 @@
 import Image from "next/image";
 const DetailsPopup = ({ open, close, data }) => {
 
-
-
   const opacityLinks ={
     opacity: ".2"
   }
@@ -68,9 +66,9 @@ const DetailsPopup = ({ open, close, data }) => {
                     {" "}
                     <a href={data?.liveurl} title="GitHub Repo">
                       <Image
-                      layout="fill"
                         alt="github"
                         width={20}
+                        height={20}
                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                       />
                     </a>{" "}
@@ -80,7 +78,6 @@ const DetailsPopup = ({ open, close, data }) => {
                     {" "}
                     <a style={opacityLinks} href={data?.liveurl} title="GitHub Repo (Unavailable)">
                       <Image
-                            objectFit="cover" 
                         alt="github"
                         width={20}
                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"

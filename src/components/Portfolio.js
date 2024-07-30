@@ -167,10 +167,6 @@ const Portfolio = () => {
 
   const activeBtn = (value) => (value === techStackFilter ? "current" : "");
 
-  // if (loading) {
-  //   return <PreLoader />;
-  // }
-
   return (
     <div className="dizme_tm_section" >
       <DetailsPopup

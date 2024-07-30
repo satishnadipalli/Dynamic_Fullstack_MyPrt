@@ -101,8 +101,8 @@ const Home = ({ dark }) => {
                       return(
                         <div key={item.id} className="w-8 h-8 flex items-center justify-center">
                           <Link href={item.link}>
-                            <img 
-                              src={item?.imageUrl}
+                            <img
+                              src={item.imageUrl}
                               className="w-7 h-7 border-solid border-4 hover:border-emerald-600 rounded-2xl"
                             />
                           </Link>
@@ -115,11 +115,13 @@ const Home = ({ dark }) => {
             </div>
             <div className="image-container">
               <div className="mask-image">
-                <img
+                {/* <Image
+                layout="fill"
+                objectFit="cover" 
                   className="masked-image"
-                  src={"./img/logo/satishNadipalli.jpg"}
+                  // src={"/img/logo/satishNadipalli.jpg"}
                   alt="image"
-                />
+                /> */}
               </div>
             </div>
           </div>
