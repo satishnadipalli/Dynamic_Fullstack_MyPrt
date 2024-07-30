@@ -239,9 +239,7 @@ const Portfolio = () => {
                           data-category={item?.techStack}
                           style={{minHeight:"210px"}}
                         >
-                          <Image
-                          layout="fill"
-                          objectFit="cover" 
+                          <img
                             className="min-h-[220px] max-h-[220px]"
                             src={item?.image?.url}
                             alt={item?.title}
@@ -267,10 +265,8 @@ const Portfolio = () => {
           className="brush_1 wow zoomIn"
           data-wow-duration="1s"
         >
-          <Image
-          layout="fill"
-          objectFit="cover" 
-            src="img/brushes/portfolio/1.png"
+          <img
+            src="./img/brushes/portfolio/1.png"
             alt="image"
           />
         </div>
@@ -278,10 +274,8 @@ const Portfolio = () => {
           className="brush_2 wow fadeInRight"
           data-wow-duration="1s"
         >
-          <Image
-          layout="fill"
-          objectFit="cover" 
-            src="img/brushes/portfolio/2.png"
+          <img
+            src="./img/brushes/portfolio/2.png"
             alt="image"
           />
         </div>

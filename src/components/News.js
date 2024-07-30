@@ -4,9 +4,9 @@ import BlogPopUp from "./popup/BlogPopUp";
 import UserContext from "../userContext/userContext";
 import Preloader from "../components/preloader";
 import Image from "next/image";
-import mhtechin from "../../public/img/logo/mhtechin.jpeg"
-import rablo from "../../public/img/logo/Rablo.jpeg"
-import mkhxts from "../../public/img/logo/mktxs.jpeg"
+const  mhtechin = "./img/logo/mhtechin.jpeg"
+const rablo = "./img/logo/Rablo.jpeg"
+const mkhxts = "./img/logo/mktxs.jpeg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -75,47 +75,7 @@ const sortedExperience = [
   },
 ];
 
-// const education = [
-//   {
-//     bulletPoints: [
-//       "Design and build full website",
-//       "Optimized Site",
-//       "SEO implemented"
-//     ],
-//     company_name: "MHTECIN",
-//     enabled: true,
-//     endDate: "2024-01-25T00:00:00.000Z",
-//     forEducation: true,
-//     icon: {
-//       public_id: "1706289470834-siro83",
-//       url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706289470834-siro83"
-//     },
-//     jobLocation: "Bangalore",
-//     jobTitle: "Software Developer",
-//     sequence: 3,
-//     startDate: "2023-12-13T00:00:00.000Z",
-//     summary: "",
-//     _id: "65b3e93feb20546ae6d46369"
-//   },
-//   {
-//     company_name: "DataTech Solutions",
-//     summary: "Played a key role in developing a data analytics platform for a diverse range of clients.",
-//     sequence: 4,
-//     startDate: "2024-03-13T00:00:00.000Z",
-//     endDate: "2024-03-22T00:00:00.000Z",
-//     enabled: true,
-//     forEducation: true,
-//     jobLocation: "Remote",
-//     jobTitle: "Data Analyst",
-//     icon: {
-//       public_id: "1706289470834-siro84",
-//       url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706289470834-siro84"
-//     }
-//   }
-// ];
 
-// const sortedExperience = work.sort((a, b) => a.sequence - b.sequence);
-// const sortedEducation = education.sort((a, b) => a.sequence - b.sequence);
 
 const News = ({dark}) => {
 
@@ -150,10 +110,10 @@ const News = ({dark}) => {
                     <div key={exp.id} className="flex h-full " data-aos="fade">
                       <div className="grid h-full">
                         <div className="h-full w-16  flex justify-center flex-col items-center ">
-                          <div className="w-10 h-10 p-0.5 rounded-3xl  border-2 border-solid border-gray-600">
-                            <Image
-                              src={exp.image}
-                              className="rounded-[50%] w-9 h-9 m-1"
+                          <div className="w-10 h-10  rounded-3xl  border-2 border-solid border-gray-600">
+                            <img
+                              src={exp?.image}
+                              className="rounded-[50%] w-9 h-9 p-0.5"
                               alt="No image found"
                               
                             />
@@ -186,10 +146,10 @@ const News = ({dark}) => {
           </div>
         </div>
         <div className="brush_1 wow zoomIn mt-32" data-wow-duration="1s">
-          <Image layout="fill" src="img/brushes/news/1.png" alt="image" />
+          <img src="./img/brushes/news/1.png" alt="image" />
         </div>
         <div className="brush_2 wow zoomIn" data-wow-duration="1s">
-          <Image       objectFit="cover"  src="img/brushes/news/2.png" alt="image" />
+          <img src="./img/brushes/news/2.png" alt="image" />
         </div>
       </div>
     </div>

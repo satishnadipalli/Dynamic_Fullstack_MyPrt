@@ -54,7 +54,7 @@ const Partners = ({ dark }) => {
                     style={{height:"100%",display:"flex",alignItems:"center",justifyContent:"center",padding:"35px"}}
                   >
                     <div  >
-                      <Image
+                      <img
                         src={item.imageUrl}
                         alt="image not fuond"
                       />
@@ -67,7 +67,7 @@ const Partners = ({ dark }) => {
           </div>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <Image src="img/brushes/partners/1.png" alt="image" />
+          <img src="./img/brushes/partners/1.png" alt="image" />
         </div>
       </div>
     </div>

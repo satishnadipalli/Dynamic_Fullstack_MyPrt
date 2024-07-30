@@ -23,8 +23,7 @@ const DetailsPopup = ({ open, close, data }) => {
         <div className="description_wrap">
           <div className="popup_details">
             <div className="top_image">
-              <Image layout="fill"
-      objectFit="cover"  src={data?.image?.url} alt="image" />
+              <img src={data?.image?.url} alt="image" />
               <div
                 className="main"
                 data-img-url={data?.image?.url}

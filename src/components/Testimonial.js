@@ -135,8 +135,7 @@ const Testimonial = () => {
                       </div>
                       <div className="short">
                         <div className="image">
-                          <Image layout="fill"
-      objectFit="cover"  style={{borderRadius: "100%"}} alt="image" src={data.image.url} />
+                          <img  style={{borderRadius: "100%"}} alt="image" src={data.image.url} />
                           <div className="main" data-img-url={data.image.url} />
                         </div>
                         <div className="detail">
@@ -188,8 +187,7 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="brush_1 wow fadeInRight" data-wow-duration="1s">
-          <Image layout="fill"
-      objectFit="cover"  src="img/brushes/testimonials/1.png" alt="image" />
+          <img src="./img/brushes/testimonials/1.png" alt="image" />
         </div>
       </div>
     </div>

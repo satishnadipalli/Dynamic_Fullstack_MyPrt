@@ -28,16 +28,14 @@ const Intro = () => {
           <div className="demos">
             <div className="left">
               <div className="desc">
-                <Image layout="fill"
-      objectFit="cover"  src="img/intro/light.png" alt="image" />
+                <img src="img/intro/light.png" alt="image" />
                 <h3 className="title">Light Demo</h3>
               </div>
               <a className="intro_link" href="index-white" target="_blank" />
             </div>
             <div className="right">
               <div className="desc">
-                <Image layout="fill"
-      objectFit="cover"  src="img/intro/dark.png" alt="image" />
+                <img src="img/intro/dark.png" alt="image" />
                 <h3 className="title">Dark Demo</h3>
               </div>
               <a className="intro_link" href="index-dark" target="_blank" />

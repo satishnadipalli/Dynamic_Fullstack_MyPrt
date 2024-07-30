@@ -13,7 +13,7 @@ const BlogPopUp = ({ data, open, close }) => {
             <div className="news_popup_informations">
               <div className="image">
               {
-                data?.forEducation ? <Image layout="fill" src="https://cdn.elearningindustry.com/wp-content/uploads/2022/02/shutterstock_1112381495.jpg" alt="image" /> : <Image       objectFit="cover"  src="https://img.jagranjosh.com/imported/images/E/Articles/imp-of-work-ex.jpg" alt="image" />
+                data?.forEducation ? <img src="https://cdn.elearningindustry.com/wp-content/uploads/2022/02/shutterstock_1112381495.jpg" alt="image" /> : <Image       objectFit="cover"  src="https://img.jagranjosh.com/imported/images/E/Articles/imp-of-work-ex.jpg" alt="image" />
               }
               {
                 data?.forEducation ? (<div

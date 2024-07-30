@@ -17,10 +17,10 @@ const About = ({ dark }) => {
           <h3>About <span>Me</span></h3>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <Image layout="fill" src="img/brushes/about/1.png" alt="image" />
+          <img src="./img/brushes/about/1.png" alt="image" />
         </div>
         <div className="brush_2 wow fadeInRight" data-wow-duration="1s">
-          <Image       objectFit="cover"  src="img/brushes/about/2.png" alt="image" />
+          <img  src="./img/brushes/about/2.png" alt="image" />
         </div>
       </div>
     </div>

@@ -52,11 +52,9 @@ const Process = ({ dark }) => {
                     <div className="list_inner">
                       <div className="icon">
                         <span>
-                          <Image
-                          layout="fill"
-                          objectFit="cover" 
+                          <img
                             className="brush"
-                            src={`img/brushes/process${dark ? "/dark" : ""}/${
+                            src={`./img/brushes/process${dark ? "/dark" : ""}/${
                               i + 1
                             }.png`}
                             alt="image"

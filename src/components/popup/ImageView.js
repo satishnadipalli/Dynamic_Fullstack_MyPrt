@@ -27,8 +27,7 @@ const ImgViews = ({ close, src }) => {
               >
                 ×
               </button> */}
-              <Image layout="fill"
-      objectFit="cover"  className="mfp-img" alt="image" src={src} />
+              <iimg  className="mfp-img" alt="image" src={src} />
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>

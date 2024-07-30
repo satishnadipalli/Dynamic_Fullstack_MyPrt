@@ -139,17 +139,13 @@ const Service = ({ dark }) => {
                         <div className="list_inner tilt-effect">
                           <span className="icon">
                             {dark ? (
-                              <Image
-                              layout="fill"
-      objectFit="cover" 
+                              <img
                                 className="back"
                                 src={data.image.url}
                                 alt="image"
                               />
                             ) : (
-                              <Image
-                              layout="fill"
-      objectFit="cover" 
+                              <img
                                 className="back"
                                 src={data.image.url}
                                 alt="image"
@@ -166,9 +162,7 @@ const Service = ({ dark }) => {
                             <p>{data.desc}</p>
                           </div>
                           <a className="dizme_tm_full_link" href="#" />
-                          <Image
-                          layout="fill"
-                          objectFit="cover" 
+                          <img
                             className="popup_service_image"
                             src={data.image.url}
                             alt="image"
@@ -181,12 +175,10 @@ const Service = ({ dark }) => {
           </div>
         </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <Image layout="fill"
-      objectFit="cover"  src="img/brushes/service/5.png" alt="image" />
+          <img  src="./img/brushes/service/5.png" alt="image" />
         </div>
         <div className="brush_2 wow zoomIn" data-wow-duration="1s">
-          <Image layout="fill"
-      objectFit="cover"   src="img/brushes/service/6.png" alt="image" />
+          <img  src="./img/brushes/service/6.png" alt="image" />
         </div>
       </div>
     </div>
