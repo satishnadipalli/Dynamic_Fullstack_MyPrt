@@ -2733,7 +2733,8 @@ input[type="number"] {
 }
 .dizme_tm_intro .short_info h3 {
   font-size: 20px;
-  color: #767676;
+  color: #3f0049;
+  font-weight: 600;
 }
 .dizme_tm_intro {
   width: 100%;
@@ -2741,12 +2742,14 @@ input[type="number"] {
   clear: both;
   float: left;
   position: relative;
+  transition-duration:0.5s;
 }
 .dizme_tm_intro .demos {
   width: 100%;
   height: 100%;
   clear: both;
   display: flex;
+  transition-duration:0.5s ;
   align-items: center;
   text-align: center;
   position: relative;
