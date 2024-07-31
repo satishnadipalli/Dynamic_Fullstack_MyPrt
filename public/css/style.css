@@ -2751,6 +2751,7 @@ input[type="number"] {
   text-align: center;
   position: relative;
   overflow: scroll;
+  margin-top: -50px;
 }
 
 
@@ -2873,7 +2874,7 @@ input[type="number"] {
   line-height: 70px;
   display: inline-block;
   left: 50%;
-  bottom: 0%;
+  bottom: 5%;
   margin-left: -35px;
   font-weight: 600;
 
