@@ -1,11 +1,25 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Cursor from "../src/layout/Cursor";
 import PreLoader from "../src/layout/PreLoader";
 import Image from "next/image";
 
 
 const Intro = () => {
+  const [width,setWindowWidth] = useState();
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+    window.addEventListener('resize', handleResize);
+  
+    // Cleanup function to remove the event listener
+    // return () => {
+    //   window.removeEventListener('resize', handleResize);
+    // };
+  }, []);
+
   return (
     <Fragment>
       <Head>
@@ -20,12 +34,12 @@ const Intro = () => {
             <span className="anim" />
           </div>
           <div className="short_info">
-            <h3 style={{color:"gray"}} className="">Hey there!! Select Your Prefered Theme</h3>
+            <h3 style={{color:"gray",marginTop:"-40px"}} className="">Hey there!! Select Your Prefered Theme</h3>
           </div>
           <span className="intro_line" />
           <span className="intro_line_2" />
           <span className="intro_line_3" />
-          <div className="demos">
+          <div style={{width:`${width}`,overflow:"hidden"}} className="demos">
             <div className="left">
               <div className="desc desc1">
               <h3 className="titlesss">Light Theme</h3>

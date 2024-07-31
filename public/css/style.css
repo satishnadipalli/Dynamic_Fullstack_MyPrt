@@ -2753,7 +2753,9 @@ input[type="number"] {
   overflow: scroll;
   margin-top: -50px;
 }
-
+.titlesss{
+  display: none;
+}
 
 @media (max-width: 728px) {
   .dizme_tm_intro .demos{
@@ -2774,6 +2776,7 @@ input[type="number"] {
     width: 300px;
   }
   .dizme_tm_intro .desc1 .titlesss{
+    display: block;
     margin-left: 20px;
     margin-bottom: 20px;
   }
