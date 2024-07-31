@@ -43,17 +43,21 @@ const Intro = () => {
             <div className="left">
               <div className="desc desc1">
               <h3 className="titlesss">Light Theme</h3>
-                <img className="img1" src="img/intro/light.png" alt="image" />
+                <a className="intro_link" href="index-white" target="_blank" >
+                  <img className="img1" src="img/intro/light.png" alt="image" />
+                </a>
                 <h3 className="tt">Light Theme</h3>
               </div>
-              <a className="intro_link" href="index-white" target="_blank" />
+              
             </div>
             <div className="right">
               <div className="desc">
-                <img className="img2" src="img/intro/dark.png" alt="image" />
+                <a a className="intro_link" href="index-dark" target="_blank" >
+                  <img className="img2" src="img/intro/dark.png" alt="image" />
+                </a>
                 <h3 className="title">Dark Theme</h3>
               </div>
-              <a className="intro_link" href="index-dark" target="_blank" />
+              
             </div>
           </div>
         </div>
