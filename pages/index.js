@@ -12,9 +12,9 @@ const Intro = () => {
         <title>Satish Nadipalli | Intro</title>
       </Head>
       <PreLoader />
-      <div className="dizme_tm_all_wrap" data-magic-cursor="show">
+      <div className="dizme_tm_all_wrap overflow-hidden" data-magic-cursor="show">
         <div className="dizme_tm_intro">
-          <div className="dizme_tm_intro_fixed_price">
+          <div className="dizme_tm_intro_fixed_price ">
             <span className="anim" />
             <span className="anim" />
             <span className="anim" />
@@ -27,9 +27,10 @@ const Intro = () => {
           <span className="intro_line_3" />
           <div className="demos">
             <div className="left">
-              <div className="desc">
+              <div className="desc desc1">
+              <h3 className="titlesss">Light Theme</h3>
                 <img className="img1" src="img/intro/light.png" alt="image" />
-                <h3 className="title ">Light Theme</h3>
+                <h3 className="tt">Light Theme</h3>
               </div>
               <a className="intro_link" href="index-white" target="_blank" />
             </div>
