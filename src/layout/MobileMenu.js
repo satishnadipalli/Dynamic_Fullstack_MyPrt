@@ -7,7 +7,9 @@ const MobileMenu = ({ logo }) => {
         <div className="mobile_in">
           <div className="logo">
             <a href="#">
-              <img src={logo ? logo : "img/logo/logo.png"} alt="image" />
+            <div className="logo">
+            <span style={{fontWeight:"700",fontSize:"20px",color:"black"}}>Satish <span style={{fontWeight:"700",fontSize:"20px",color:"#f75023"}}>Nadipalli</span></span>
+          </div>
             </a>
           </div>
           <div className="trigger">
@@ -27,37 +29,37 @@ const MobileMenu = ({ logo }) => {
       <div className="dropdown" style={{ display: toggle ? "block" : "none" }}>
         <div className="dropdown_inner">
           <ul className="anchor_nav">
-            <li className="current">
+            <li className=" current p-2 pl-1"  >
               <a href="#home" onClick={() => setToggle(false)}>
                 Home
               </a>
             </li>
-            <li>
+            <li className="p-2 pl-1" >
               <a onClick={() => setToggle(false)} href="#about">
                 About
               </a>
             </li>
-            <li>
+            <li className="p-2 pl-1" >
               <a onClick={() => setToggle(false)} href="#portfolio">
                 Portfolio
               </a>
             </li>
-            <li>
+            <li className="p-2 pl-1" >
               <a onClick={() => setToggle(false)} href="#service">
                 Service
               </a>
             </li>
-            <li>
+            <li className="p-2 pl-1" >
               <a onClick={() => setToggle(false)} href="#blog">
                 Blog
               </a>
             </li>
-            <li>
+            <li className="p-2 pl-1" >
               <a onClick={() => setToggle(false)} href="#contact">
                 Contact
               </a>
             </li>
-            <li className="download_cv">
+            <li  className="download_cv">
               <a href="img/cv/1.jpg" download="">
                 <span>Download CV</span>
               </a>

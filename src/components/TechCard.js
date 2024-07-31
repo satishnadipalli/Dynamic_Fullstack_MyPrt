@@ -11,11 +11,11 @@ const TechCard = ({ title, classaName, tech,dark,delay,right }) => {
       duration: 500, // Increase duration for smoother animation
       easing: 'ease-in-out', // Use an easing function that provides smoother transitions
     });
-  },[]); 
+},[]); 
 
 
   return (
-    <div data-aos ={`${right? "zoom-in-up" : "zoom-in-up"}`} data-aos-delay={`${delay}0`} className="flex-1  flex flex-col gap-4 bg-gray-700 p-4 py-8 shadow-lg md:w-[80%] min-h-48 text-">
+    <div data-aos ={`${right? "fade" : "fade"}`} data-aos-delay={`${delay}0`} className="flex-1  flex flex-col gap-4 bg-gray-700 p-4 py-8 shadow-lg md:w-[80%] min-h-48 text-">
       <div className="text-primary font-medium text-lg  tracking-wider text-white">
         {title}
       </div>

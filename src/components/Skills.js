@@ -34,14 +34,14 @@ const Skills = ({dark}) => {
         />
         <TechCard
         right={false}
-        delay={25}
+        delay={20}
           title="Backend"
           classaName="bg-[#f37c36]"
           tech={['Node Js', 'Express Js', 'Spring boot', 'Next Auth',"Firebase","Appwrite"]}
           dark={dark}
         />
         <TechCard
-        delay={40}
+        delay={30}
           right ={ true}
           title="Database"
           classaName="bg-[#e0558a]"
@@ -50,7 +50,7 @@ const Skills = ({dark}) => {
         />
         <TechCard
         right={true}
-          delay={55}
+          delay={50}
           title="Devops"
           classaName="bg-[#10c0a2]"
           tech={[

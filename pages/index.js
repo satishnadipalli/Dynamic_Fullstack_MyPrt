@@ -20,7 +20,7 @@ const Intro = () => {
             <span className="anim" />
           </div>
           <div className="short_info">
-            <h3>Hey there!! choose your loved mode</h3>
+            <h3 style={{color:"gray"}} className="">Hey there!! Select Your Prefered Theme</h3>
           </div>
           <span className="intro_line" />
           <span className="intro_line_2" />
@@ -28,15 +28,15 @@ const Intro = () => {
           <div className="demos">
             <div className="left">
               <div className="desc">
-                <img src="img/intro/light.png" alt="image" />
-                <h3 className="title">Light Demo</h3>
+                <img className="img1" src="img/intro/light.png" alt="image" />
+                <h3 className="title ">Light Theme</h3>
               </div>
               <a className="intro_link" href="index-white" target="_blank" />
             </div>
             <div className="right">
               <div className="desc">
-                <img src="img/intro/dark.png" alt="image" />
-                <h3 className="title">Dark Demo</h3>
+                <img className="img2" src="img/intro/dark.png" alt="image" />
+                <h3 className="title">Dark Theme</h3>
               </div>
               <a className="intro_link" href="index-dark" target="_blank" />
             </div>
